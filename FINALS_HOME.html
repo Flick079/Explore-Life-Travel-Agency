@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title> FINALS HUMAN COMPUTER INTERACTION </title>
+    </head>
+    <body background="back1.png"> 
+     <img src="rsz_profile-picture-circle-hd.png" alt="Avatar" id="AccPic">
+       <a href="index.html"><input type="button" value="Log Out" style="width: 80px;height: 25px;background-color: darkcyan;color:white;" id="back"></a> <br> <br>
+     <div class="wrapper">
+        <div class="tabs">
+          <div class="tab">
+            <input type="radio" name="css-tabs" id="tab-1" checked class="tab-switch">
+            <label for="tab-1" class="tab-label">Country Side</label>
+            <div class="tab-content"> <img src="country1.jpg" width="100%" height="500px">Explore the beauty that enguls in the hidden place of country side. Distant but peaceful. Beauty in its purest form. If you avail our promo, you would be able to stay in a 
+              beautiful traditional bahay kubo, with a modern taste inclided with it. "While the hustle and bustle of the city can be fun to enjoy, it's hard to deny the appeal of a more peaceful 
+              retreat surrounded by nature. There are many fabulous countryside escapes from small towns in California's Gold Country to the 
+              rugged shores of Maine. One of these destinations might just be your next perfect getaway" (K.C. Dermody, 2022).</div>
+          </div>
+          <div class="tab">
+            <input type="radio" name="css-tabs" id="tab-2" class="tab-switch">
+            <label for="tab-2" class="tab-label">Beaches</label>
+            <div class="tab-content"> <img src="beach1.jpg" width="100%" height="500px"> A getaway place for us to bathe ourselves in the salted water of the sea, bearing both its beauty and life. A gift of life indeed.
+              The billions sand that slowly feels trough our feet, to the unending sound of the shore, no one can deny, they are in paradise. With our summer promo that
+              includes our hotel full of fun and surprises. A 3 days and 2 nights vacation that will surely captivate you and your loved ones.
+            </div>
+          </div>
+          
+          <div class="tab">
+            <input type="radio" name="css-tabs" id="tab-4" class="tab-switch">
+            <label for="tab-4" class="tab-label">Inquire</label>
+            <div class="tab-content"> Trough our contacts, we promise you that you will receive a superb customer service and exccellent accomdation from a team of dedicated employees. So do not hesitate. Call us now! <br>Email: explorelife@gmail.com <br> Contact No: 09321348083</div>
+          </div>
+          <div class="tab">
+            <input type="radio" name="css-tabs" id="tab-6" class="tab-switch">
+            <label for="tab-6" class="tab-label">About Us</label>
+            <div class="tab-content">We are a group of people dedicated in giving you the best services that you deserve. That is why we continously work hard to ensure that you can get the best treatment that you deserve. We first started our company
+              while we were still in college. We decided that a lot of people enjoy travelling because we believe that it is an essential part of life. Appreciating nature in its purest form. So Explore Life started. After years of operation,
+            we did not measure our success from money but in the satisfaction of our dear customers. We promise to work harder. Thank you! and continue to explore life! </div>
+          </div>
+        </div>
+      </div>
+      <style>
+        #AccPic{
+            border-radius: 50%;
+            height: auto;
+            position: absolute;
+            top: 8px;
+            right: 100px;
+        }
+        #wel{
+            font-style:initial;
+            color: azure;
+        }
+        * {
+       box-sizing: border-box;
+       }
+       body {
+       font-family: "Open Sans";
+       color: #ecf0f1;
+       line-height: 1.618em;
+       top: 30px;
+       }
+       .wrapper {
+       max-width: 100rem;
+       width: 100%;
+       margin: 0 auto;
+       }
+       .tabs {
+       position: relative;
+       margin: 8rem 0;
+       background: #1398b9;
+       height: 14.75rem;
+       }
+       .tabs::before,
+       .tabs::after {
+       content: "";
+       display: table;
+       }
+       .tabs::after {
+       clear: both;
+       }
+       .tab {
+       float: left;
+       }
+       .tab-switch {
+       display: none;
+       }
+       .tab-label {
+       position: relative;
+       display: block;
+       line-height: 2.75em;
+       height: 10rem;
+       padding: 0 1.618em;
+       background: #1398b9;
+       border-right: 0.125rem solid #1398b9;
+       color: #fff;
+       cursor: pointer;
+       top: 0;
+       transition: all 0.25s;
+       }
+       .tab-label:hover {
+       top: -0.25rem;
+       transition: top 0.25s;
+       }
+       .tab-content {
+       height: auto;
+       position: absolute;
+       z-index: 1;
+       top: 2.75em;
+       left: 0;
+       padding: 1.618rem;
+       background: #fff;
+       color: #2c3e50;
+       border-bottom: 0.25rem solid #bdc3c7;
+       opacity: 0;
+       transition: all 0.35s;
+       text-align: justify;
+       }
+       .tab-switch:checked + .tab-label {
+       background: #fff;
+       color: #2c3e50;
+       border-bottom: 0;
+       border-right: 0.125rem solid #fff;
+       transition: all 0.35s;
+       z-index: 1;
+       top: -0.0625rem;
+       }
+       .tab-switch:checked + label + .tab-content {
+       z-index: 2;
+       opacity: 1;
+       transition: all 0.35s;
+       }
+        #back{
+                border-radius: 20rem;
+                width: 150px;
+                position: absolute;
+                top: 30px;
+                right: 16px;
+           }
+    </style>
+    </body>
+</html>
